@@ -1,0 +1,119 @@
+/* all */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Light.woff2') format('woff2'),
+        url('../font/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('../font/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+  
+ 
+body {
+    font-family: 'Gilroy'!important;
+    background: rgb(99,68,134);
+    background: radial-gradient(circle, rgba(99,68,134,1) 0%, rgba(67,44,95,1) 100%, rgba(67,44,95,1) 100%); 
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ .text-purple {
+     color: #3c2757;
+ }
+
+ .skew-out {
+    transform: skew(0deg, -3deg);
+    overflow: hidden;
+    position: relative;
+}
+
+.skew-in {
+    transform: skew(0deg, 3deg);
+}
+
+ /* section loja gratis */
+
+.text-chamada {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    line-height: clamp(2.5rem, 4.5vw, 3.5rem);
+}
+
+.btn-clique-aqui {
+    width: 200px;
+    height: 50px;
+    background-image: url('../img/clique.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* section vendas */
+
+#vendas p {
+    font-size: 1.2rem;
+}
+
+#topics-vendas {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+#topics-vendas li {
+    padding-top: 2.5rem;
+    list-style-type: none;
+}
+
+#topics-vendas li::before {
+    content: '';
+    height: 3em;
+    width: 2em;
+    background-image: url('../img/icon-topic.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1.5rem;
+    margin-top: -10px;
+}
+
+/* section facilidades */
+
+#facilidades {
+    font-size: 1.2rem;
+    background: rgb(255,221,88);
+    background: radial-gradient(circle, rgba(255,221,88,1) 0%, rgba(255,203,7,1) 100%); 
+}
+
+.sub-text-chamada {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.num-list {
+    list-style: none;
+}
+
+.num-list li {
+    padding-top: 2rem;
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+    .btn-clique-aqui {
+        margin-right: 4.5rem;
+    }
+}
